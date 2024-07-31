@@ -9,7 +9,7 @@ const ConductTransaction = () => {
     const [knownAddresses, setKnownAddresses] = useState([])
 
     useEffect(() => {
-        fetch(`http://127.0.0.1:3001/api/known-addresses`)
+        fetch(`https://pebl.onrender.com/api/known-addresses`)
             .then(response => response.json())
             .then(data => setKnownAddresses(data.knownAddresses))
     }, [])
@@ -25,7 +25,7 @@ const ConductTransaction = () => {
     }
 
     const conductTransaction = () => {
-        fetch(`http://127.0.0.1:3001/api/transact`, {
+        fetch(`https://pebl.onrender.com/api/transact`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({recipient, amount})

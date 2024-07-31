@@ -10,13 +10,13 @@ const TransactionPool = () => {
     const [transactionPoolMap, setTransactionPoolMap] = useState({})
 
     const fetchTransactionPoolMap = () => {
-        fetch(`http://127.0.0.1:3001/api/transaction-pool-map`)
+        fetch(`https://pebl.onrender.com/api/transaction-pool-map`)
         .then(response => response.json())
         .then(data =>setTransactionPoolMap(data.transactionPool))
     }
 
     const fetchMineTransactions = () => {
-        fetch(`http://127.0.0.1:3001/api/mine-transactions`)
+        fetch(`https://pebl.onrender.com/api/mine-transactions`)
             .then(response => {
                 if (response.status === 200) {
                     alert('success')

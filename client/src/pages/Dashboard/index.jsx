@@ -8,7 +8,7 @@ const Dashboard = () => {
 
     useEffect(() => {
         console.log(document.location.origin)
-        fetch(`http://127.0.0.1:3001/api/wallet-info`)
+        fetch(`https://pebl.onrender.com/api/wallet-info`)
           .then(response => response.json())
           .then(data => {
             setAddress(data.address)

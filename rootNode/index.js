@@ -12,7 +12,7 @@ dotEnv.config()
 
 const DEFAULT_PORT = 3000;
 const isDevelopment = process.env.ENV === 'development'
-const REDIS_URL = isDevelopment ? 'localhost' : ""
+const REDIS_URL = isDevelopment ? 'localhost' : "redis://default:d2JDknzPFVd3MC41iGnitB5hIkW9lHSv@redis-15494.c293.eu-central-1-1.ec2.redns.redis-cloud.com:15494"
 
 const app = express()
 
@@ -243,7 +243,7 @@ if (isDevelopment) {
   }
 
 app.listen(DEFAULT_PORT, () => {
-    console.log(`app running on ${process.env.ENV} mode at 'http://127.0.0.1:${DEFAULT_PORT}'`)
+    console.log(`app running on ${process.env.ENV} mode at 'https://pebl.onrender.com/${DEFAULT_PORT}'`)
 })
 
 

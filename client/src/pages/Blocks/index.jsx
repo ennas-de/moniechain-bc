@@ -10,14 +10,14 @@ const Blocks = () => {
 
     useEffect(() => {
         // console.log(document.location.origin)
-        fetch(`http://127.0.0.1:3001/api/blocks/length`)
+        fetch(`https://pebl.onrender.com/api/blocks/length`)
         .then(response => response.json())
         .then(data => setBlocksLength(data.blockchain))
 
         fetchPaginatedBlocks(paginatedId)
     }, [])
 
-    const fetchPaginatedBlocks = (paginatedId) => fetch(`http://127.0.0.1:3001/api/blocks/${paginatedId}`)
+    const fetchPaginatedBlocks = (paginatedId) => fetch(`https://pebl.onrender.com/api/blocks/${paginatedId}`)
     .then(response => response.json())
     .then(data => setBlocks(data.blockchain))
 
