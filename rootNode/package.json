@@ -1,9 +1,10 @@
 {
-  "name": "rootnode",
+  "name": "pebl_api",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll",
+    "build": "npm install",
     "start": "node index.js",
     "dev": "nodemon index.js"
 
