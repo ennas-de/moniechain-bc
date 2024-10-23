@@ -26,7 +26,7 @@ const Dashboard = () => {
       <br />
 
       <div>
-        Welcome to the Pebl.
+        Welcome to the MonieChain.
       </div>
 
       <br />
