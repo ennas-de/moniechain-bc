@@ -2,8 +2,8 @@ const MINE_RATE = 600000
 const INITIAL_DIFFICULTY = 3
 
 const BLOCKCHAIN_METADATA = {
-    name: "Pebl",
-    symbol: 'pebl',
+    name: "MonieChain",
+    symbol: 'MCN',
     logo: {
         // svg: "../assets/logo.svg",
         // png: "../assets/logo.png"
@@ -14,7 +14,7 @@ const BLOCKCHAIN_METADATA = {
 const GENESIS_DATA = {
     timestamp:  1,
     lastHash: "---------",
-    hash: "Pebl-genesis-hash",
+    hash: "MonieChain-genesis-hash",
     difficulty: INITIAL_DIFFICULTY,
     nonce: 0,
     data: [],
@@ -25,7 +25,7 @@ const STARTING_BALANCE = 100
 
 const MINING_REWARD = 10
 
-const REWARD_INPUT = {address: "*pebl-authorized-reward*"}
+const REWARD_INPUT = {address: "*moniechain-authorized-reward*"}
 
 module.exports = {
     GENESIS_DATA,
